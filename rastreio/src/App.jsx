@@ -4,6 +4,7 @@ import logo from './assets/logo.png'
 import lupa from './assets/lupa.png'
 import './app.css'
 
+
 function App() {
   const [search, setSearch] = useState('')
   const [result, setResult] = useState(null)
