@@ -2,27 +2,60 @@
 .my-container {
   display: flex;
   justify-content: center;
+  font-style: italic;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 27px;
+  font-weight: 800;
+  color: #007bc1;
 }
 
 #logo {
-  margin-top: 50px;
-  margin-bottom: 30px; /* Ajuste o valor conforme necessário */
-}
+  
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px; 
 
+  @media (max-width: 767px) {
+    max-width: 100%;
+    margin-bottom: 20px;
+    width: 350px;
+  }
+}
 
 .input-with-icon {
   position: relative;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 
   input {
-    padding-right: 30px; 
+    width: 370px;
+    height: 50px;
+    margin-top: 10px;
+    font-family:  sans-serif bold;
+    border: 3px solid #a2d333;
+    border-radius: 30px;
+    transition: border-color 0.3s ease;
+   
+
+      &:focus {
+        outline: none;
+        border-color: #a2d333;
+      }
+      &::placeholder {
+        align-items: center;
+        color: rgba(0, 0, 0, 0.3);
+        font-style: italic;
+        font-size: 23px; 
+        font-weight: 600; 
+     }
+   
   }
 
   img {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     cursor: pointer;
   }
@@ -35,7 +68,7 @@
   margin-top: 40px;
 
   div {
-    margin: 5px 0; // Espaçamento vertical uniforme
+    margin: 5px 0; 
   }
 
   @media (max-width: 767px) {
@@ -47,13 +80,28 @@
 }
   
 
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .esconder {
+      display: none; /* Esconde o elemento em telas menores que 768px de largura */
+  }
+}
+
+
   .info-container > div {
-    margin: 0 80px; /* Ajuste o valor das margens conforme necessário */
+    margin: 0 80px; 
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: #066ca7;
   }
 
 
 .primeiro-p {
   margin-bottom: 2em;
-  
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  color: red;
 }
 
