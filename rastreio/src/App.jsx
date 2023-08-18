@@ -2,7 +2,7 @@ import { useState } from 'react';
 import clienteData from '../dados.json'; 
 import logo from './assets/logo.png'; 
 import lupa from './assets/lupa.png'; 
-import './app.scss'; 
+import './style/app.css'; 
 
 function App() {
   const [search, setSearch] = useState(''); // Estado para o valor de pesquisa

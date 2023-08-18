@@ -1,0 +1,21 @@
+.my-container {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 800;
+  color: #007bc1;
+
+  #logo {
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      margin-bottom: 20px;
+      width: 350px;
+    }
+  }
+}
