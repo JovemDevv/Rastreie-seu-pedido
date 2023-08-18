@@ -69,7 +69,7 @@ function App() {
                           <span className="line-break">Data do pedido</span>
                         </div>
                         <div className=" mb-sm-0 order2" >
-                          {result.entregue ? 'Entregue' : 'A entregar'}
+                          {result.entregue ? 'Entregue' : 'Entregar'}
                           <span className="line-break">Situação da encomenda</span>
                         </div>
                       </div>
