@@ -1,29 +1,34 @@
-import { useState } from 'react';
-import clienteData from '../dados.json'; 
-import logo from './assets/logo.png'; 
-import lupa from './assets/lupa.png'; 
-import './style/app.css'; 
+import  { useState } from 'react';
+import clienteData from '../dados.json';
+import logo from './assets/logo.png';
+import lupa from './assets/lupa.png';
+import './style/app.css';
 
 function App() {
-  const [search, setSearch] = useState(''); // Estado para o valor de pesquisa
-  const [result, setResult] = useState(null); // Estado para o resultado da pesquisa
+  const [search, setSearch] = useState('');
+  const [result, setResult] = useState(null);
 
   const handleSearch = () => {
     const foundOrder = clienteData.encomendas.find(
       (encomenda) => encomenda.numero === search
     );
 
-    setResult(foundOrder || false); // Define o resultado da pesquisa com base no número encontrado
+    setResult(foundOrder || false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevenir o comportamento padrão de envio do formulário
+    handleSearch(); // Chamar a função handleSearch para executar a busca
   };
 
   return (
     <div className="my-container">
-      <form>
+      <form onSubmit={handleSubmit}> {/* Adicionar o manipulador de eventos ao formulário */}
         <div className="form-group container text-center">
           <header>
             <img src={logo} alt="Logo" id="logo" className="img-fluid mobile-logo" />
           </header>
-          
+
           <main className="mt-4">
             <div className="d-flex flex-column mt-5">
               <p>Consulte sua encomenda:</p>
@@ -52,7 +57,6 @@ function App() {
                 <div className="mt-5 ">
                   {result !== false ? (
                     <div>
-                      {/* Exibe informações da encomenda encontrada */}
                       <div className="info-container d-sm-flex flex-column flex-md-row ">
                         <div className="mb-3 mb-sm-0 mr-sm-3 ">
                           {result.id} - {result.cliente.nome}
@@ -76,7 +80,6 @@ function App() {
                     </div>
                   ) : (
                     <div>
-                      {/* Mensagem exibida quando nenhuma encomenda é encontrada */}
                       <div className="primeiro-p">
                         <p>Encomenda</p>
                         <p>não encontrada!</p>
