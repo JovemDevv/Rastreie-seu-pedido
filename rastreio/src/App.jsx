@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import clienteData from '../dados.json';
 import logo from './assets/logo.png';
 import lupa from './assets/lupa.png';
@@ -26,7 +26,10 @@ function App() {
       <form onSubmit={handleSubmit}> {/* Adicionar o manipulador de eventos ao formulário */}
         <div className="form-group container text-center">
           <header>
-            <img src={logo} alt="Logo" id="logo" className="img-fluid mobile-logo" />
+            <img src={logo} 
+            alt="Logo" 
+            id="logo" 
+            className="img-fluid mobile-logo" />
           </header>
 
           <main className="mt-4">

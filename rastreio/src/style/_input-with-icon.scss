@@ -5,9 +5,10 @@
   justify-content: center;
 
   input {
-    width: 390px;
-    height: 50px;
+    width: 400px;
+    height: 45px;
     margin-top: 10px;
+    margin-bottom: 40px;
     font-family: sans-serif bold;
     border: 3px solid #a2d333;
     border-radius: 30px;
@@ -20,19 +21,20 @@
 
     &::placeholder {
       align-items: center;
-      color: rgba(0, 0, 0, 0.3);
+      color: rgba(0, 0, 0, 0.2);
       font-style: italic;
-      font-size: 23px;
+      
+      font-size: 22px;
       margin-left: 30px;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
 
   img {
-    width: 33px;
+    width: 30px;
     position: absolute;
     right: 20px;
-    top: 60%;
+    top: 35%;
     transform: translateY(-50%);
     cursor: pointer;
   }

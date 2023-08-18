@@ -3,7 +3,7 @@
   justify-content: center;
   font-style: italic;
   align-items: center;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 800;
   color: #007bc1;
 }
@@ -27,9 +27,10 @@
   justify-content: center;
 }
 .input-with-icon input {
-  width: 390px;
-  height: 50px;
+  width: 400px;
+  height: 45px;
   margin-top: 10px;
+  margin-bottom: 40px;
   font-family: sans-serif bold;
   border: 3px solid #a2d333;
   border-radius: 30px;
@@ -41,25 +42,25 @@
 }
 .input-with-icon input::-moz-placeholder {
   align-items: center;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.2);
   font-style: italic;
-  font-size: 23px;
+  font-size: 22px;
   margin-left: 30px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .input-with-icon input::placeholder {
   align-items: center;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.2);
   font-style: italic;
-  font-size: 23px;
+  font-size: 22px;
   margin-left: 30px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .input-with-icon img {
-  width: 33px;
+  width: 30px;
   position: absolute;
   right: 20px;
-  top: 60%;
+  top: 35%;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -152,8 +153,8 @@
 }
 
 .primeiro-p {
-  margin-bottom: 2em;
-  font-size: 30px;
+  margin-bottom: 40px;
+  font-size: 25px;
   font-weight: 500;
   font-style: normal;
   color: red;
