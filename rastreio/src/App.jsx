@@ -49,24 +49,28 @@ function App() {
 
             <div>
               {result !== null && (
-                <div className="mt-5">
+                <div className="mt-5 ">
                   {result !== false ? (
                     <div>
-                      <div className="info-container d-sm-flex flex-column flex-md-row">
-                        <div className="mb-3 mb-sm-0 mr-sm-3">
+                      <div className="info-container d-sm-flex flex-column flex-md-row ">
+                        <div className="mb-3 mb-sm-0 mr-sm-3 ">
                         {result.id} - {result.cliente.nome}
-                        Número de ordem e nome do cliente 
+                        <span className="line-break">Número de ordem e nome do cliente</span>
                         </div>
-                        <div className=" mb-sm-0">
-                          {new Date(result.data).toLocaleDateString('pt-BR')}
-                        </div>
-                      </div>
-                      <div className="info-container d-sm-flex flex-column flex-md-row">
-                        <div className="mb-3 mb-sm-0 mr-sm-3 esconder">
+                        <div className="mb-3 mb-sm-0 mr-sm-3 esconder ">
                           R$ {result.valor.toFixed(2)}
+                          <span className="line-break">Valor do pedido</span>
                         </div>
-                        <div className=" mb-sm-0">
+                        
+                      </div>
+                      <div className="inf-container d-sm-flex flex-column flex-md-row">
+                        <div className=" mb-sm-0 order ">
+                          {new Date(result.data).toLocaleDateString('pt-BR')}
+                        <span className="line-break">Data do pedido</span>
+                        </div>
+                        <div className=" mb-sm-0 order2" >
                           {result.entregue ? 'Entregue' : 'A entregar'}
+                          <span className="line-break">Situação da encomenda</span>
                         </div>
                       </div>
                     </div>
