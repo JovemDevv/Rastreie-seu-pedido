@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import  { useState } from 'react';
 import clienteData from '../dados.json';
 import logo from './assets/logo.png';
 import lupa from './assets/lupa.png';
