@@ -1,8 +1,9 @@
 import  { useState } from 'react';
+import React from 'react';
 import clienteData from '../dados.json';
 import logo from './assets/logo.png';
 import lupa from './assets/lupa.png';
-import './style/app.css';
+import './style/app.scss';
 
 function App() {
   const [search, setSearch] = useState('');
