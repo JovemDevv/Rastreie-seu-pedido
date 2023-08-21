@@ -45,5 +45,3 @@ A pasta `dist` contém os arquivos otimizados prontos para serem implantados em 
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-# Rastreie seu pedido
-
