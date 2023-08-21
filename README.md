@@ -1,8 +1,4 @@
-# Rastreio de Encomendas - Projeto Front-End
-
-Este é um projeto front-end para rastreamento de encomendas, que atende aos requisitos da vaga efetiva front-end.
-
-## Visão Geral
+# Rastreie seu pedido
 
 O objetivo deste projeto é criar uma aplicação web que permite aos usuários rastrear encomendas, exibir os detalhes das encomendas e lidar com diferentes cenários, como encomendas não encontradas.
 

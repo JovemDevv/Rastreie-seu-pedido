@@ -1,25 +1,25 @@
-import  { useState } from 'react';
-import React from 'react';
-import clienteData from '../dados.json';
-import logo from './assets/logo.png';
-import lupa from './assets/lupa.png';
-import './style/app.scss';
+import  { useState } from 'react'
+import React from 'react'
+import clienteData from '../dados.json'
+import logo from './assets/logo.png'
+import lupa from './assets/lupa.png'
+import './style/app.scss'
 
 function App() {
-  const [search, setSearch] = useState('');
-  const [result, setResult] = useState(null);
+  const [search, setSearch] = useState('')
+  const [result, setResult] = useState(null)
 
   const handleSearch = () => {
     const foundOrder = clienteData.encomendas.find(
       (encomenda) => encomenda.numero === search
     );
 
-    setResult(foundOrder || false);
+    setResult(foundOrder || false)
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevenir o comportamento padrão de envio do formulário
-    handleSearch(); // Chamar a função handleSearch para executar a busca
+    e.preventDefault() // Prevenir o comportamento padrão de envio do formulário
+    handleSearch() // Chamar a função handleSearch para executar a busca
   };
 
   return (
@@ -100,7 +100,7 @@ function App() {
         </div>
       </form>
     </div>
-  );
+  )
 }
 
 export default App;
