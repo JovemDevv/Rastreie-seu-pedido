@@ -20,7 +20,6 @@ O objetivo deste projeto é criar uma aplicação web que permite aos usuários 
 - **MiniCssExtractPlugin**: Plugin para extrair CSS em um arquivo separado durante o processo de build.
 - **HtmlWebpackPlugin**: Plugin para o Webpack que gera o arquivo HTML final com as dependências injetadas.
 - **HtmlMinimizerPlugin**: Plugin para otimização do HTML gerado.
-- ...
 
 ## Desenvolvimento
 
